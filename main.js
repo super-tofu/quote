@@ -12,7 +12,9 @@ const quotes = [
     "There is little success where there is little laughter.",
     "We cannot solve our problems with the same thinking we used when we created them."
   ];
-  function add(){
+  function add(myVal){
+    
+     
   var sourceLength = quotes.length;
 			var randomNumber= Math.floor(Math.random()*sourceLength);
 			//set a new quote
@@ -20,7 +22,8 @@ const quotes = [
 			var newQuoteText = quotes[randomNumber];
             }
             
-          
-            document.getElementById("idQuote").innerHTML=newQuoteText;
             
-            }					
+            document.getElementById("idQuote").innerHTML=newQuoteText;
+            return false;
+            }	
+            
